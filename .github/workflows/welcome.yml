@@ -9,5 +9,8 @@ jobs:
   welcome_message:
     runs-on: ubuntu-latest
     steps:
-      - name: Run a one-line script
+      - name: Welcome Message
         run: echo "Welcome, Pavly!"
+      
+      - name: Show Current Date
+        run: echo "${{date}}"
