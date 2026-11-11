@@ -1,0 +1,9 @@
+name: welcome
+
+on:
+    push:
+        - main
+
+jobs:
+    name: Welcome Message
+    run: "Welcome, Pavly!"
