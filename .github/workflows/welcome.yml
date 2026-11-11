@@ -13,4 +13,6 @@ jobs:
         run: echo "Welcome, Pavly!"
       
       - name: Show Current Date
-        run: echo "${{date}}"
+        run: |
+          echo "The Workflow ran at"
+          date
