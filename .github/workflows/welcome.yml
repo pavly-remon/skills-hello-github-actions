@@ -1,10 +1,11 @@
 name: welcome
 
 on:
-    push:
-        - main
+  push:
+    branches:
+      - main
 
 jobs:
-    Welcome Message:
-        - steps: 
-            run: echo "Welcome, Pavly!"
+  Welcome Message:
+    - steps: 
+        run: echo "Welcome, Pavly!"
