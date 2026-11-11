@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  Welcome Message:
+  welcome_message:
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
