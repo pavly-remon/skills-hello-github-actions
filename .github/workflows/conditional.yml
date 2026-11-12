@@ -7,7 +7,7 @@ on:
 
 jobs:
   welcome_message:
-    if: github.repository == 'pavly-remon/skills-hello-github'
+    if: github.repository == 'pavly-remon/skills-hello-github-actions'
     runs-on: ubuntu-latest
     steps:
       - name: Welcome Message
