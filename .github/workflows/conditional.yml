@@ -1,0 +1,26 @@
+name: Conditional
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  welcome_message:
+    if: github.repository == 'pavly-remon/skills-hello-github'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome Message
+        run: echo "Welcome, Pavly!"
+      
+      - name: Show Current Date
+        run: |
+          echo "The Workflow ran at"
+          date
+  
+  goodbye_message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Goodbye
+        run: echo "Goodbye, Pavly!"
+
