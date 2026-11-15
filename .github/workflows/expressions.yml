@@ -1,0 +1,23 @@
+name: Expressions
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  welcome_message:
+    if: contains("Hello World!","orl")
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show Current Date
+        run: |
+          echo "The Workflow ran at"
+          date
+  
+  goodbye_message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Goodbye
+        run: echo ${{ format("Goodbye, {0}!", "Pavly") }}
+
