@@ -7,7 +7,7 @@ on:
 
 jobs:
   welcome_message:
-    if: contains("Hello World!","orl")
+    if: contains('Hello World!','orl')
     runs-on: ubuntu-latest
     steps:
       - name: Show Current Date
