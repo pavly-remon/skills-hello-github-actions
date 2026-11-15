@@ -12,12 +12,13 @@ jobs:
     steps:
       - name: Show Current Date
         run: |
-          echo "The Workflow ran at"
-          date
+          echo "The Workflow ran at $(date)"
+          echo "Job Context in JSON: ${{ toJson(github.job) }}"
   
   goodbye_message:
     runs-on: ubuntu-latest
     steps:
       - name: Goodbye
         run: echo ${{ format('Goodbye, {0}!', 'Pavly') }}
+
 
